@@ -2,14 +2,25 @@ package association;
 
 public class A {
 	
-	private String name;
+	private B bRef;//instance field thuộc về object
+	private static int count;//static field không thuộc về object
 	
 	A(){
-		System.out.println("Đang đẻ ra đối tượng của class A");
 	}
 	
-	public void mA() {
+
+	A(B _bRef){
+		//biến instance
+		this.bRef        = _bRef;
+	}
+	
+	public void print() {
 		System.out.println("mA ...");
+		//sử dụng biến tham chiếu của object class B
+		//để gửi thông điệp đến hành vi printName()
+		//của object class B thực hiện hành vi printName()
+		bRef.printName();
+		
 	}
 
 }

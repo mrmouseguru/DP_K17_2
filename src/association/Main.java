@@ -20,7 +20,7 @@ public class Main {
 		thamchieuA =       new A();//một đối tượng của lớp / khuôn A được tạo ra trong Heap
 		//gửi thông điệp đến hành vi
 		// mA() tại đối tượng của class A
-		thamchieuA.mA(); 
+		//thamchieuA.mA(); 
 		System.out.println("Thoát khỏi chương trình ...");
 
 	}
