@@ -15,7 +15,10 @@ public class AppMain {
 		//bước 1
 		A aRef;
 		//bước 3
-		aRef =    new A(bRef);//bước 2
+		aRef =    new A();//bước 2
+		
+		aRef.setBRef(bRef);
+		
 		aRef.print();
 		
 	}

@@ -14,6 +14,11 @@ public class A {
 		this.bRef        = _bRef;
 	}
 	
+	public void setBRef(B bRef)
+	{
+		this.bRef = bRef;
+	}
+	
 	public void print() {
 		System.out.println("mA ...");
 		//sử dụng biến tham chiếu của object class B
