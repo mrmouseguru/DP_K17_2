@@ -6,7 +6,12 @@ public class App {
 		
 		B bRef = new B("Tèo");
 		
-		new A(bRef);
+		A aRef = new A(bRef);
+		aRef.print(bRef);
+		
+		aRef.print();
+		
+		
 	}
 
 }

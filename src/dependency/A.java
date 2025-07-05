@@ -7,8 +7,15 @@ public class A {
 		bRef.printName();
 	}
 	
-	public void print() {
+	public void print(B bRef) {
 		
+		bRef.printName();
+		
+	}
+	
+	public void print() {
+		B bRef = new B("Tý");
+		bRef.printName();
 	}
 	
 
